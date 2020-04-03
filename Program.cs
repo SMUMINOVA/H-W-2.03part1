@@ -6,7 +6,13 @@ namespace homework7._1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Rectangle firstRec = new Rectangle();
+            System.Console.Write("Enter length of rectangle: ");
+            firstRec.side1 = double.Parse(Console.ReadLine());
+            System.Console.Write("Enter width of rectangle: ");
+            firstRec.side2 = double.Parse(Console.ReadLine());
+            System.Console.WriteLine($"Perimeter of your rectangle: {firstRec.PerimeterCalculate()}");
+            System.Console.WriteLine($"Area of your rectangle: {firstRec.Area}");
         }
                 class Rectangle{
             public double side1 {get; set; }
